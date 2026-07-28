@@ -1,16 +1,57 @@
-# React + Vite
+# App de Adopción de Animales
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación React que consume datos de dos APIs públicas (**TheCatAPI** y **Dog CEO API**) para mostrar una galería de gatos y perros, y simular el proceso de adopción mediante un modal interactivo.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 [Ver proyecto desplegado](https://desire-e.github.io/Adopcion_Animales_React/)
 
-## React Compiler
+## Características
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Obtiene 5 gatos aleatorios (con raza) desde **TheCatAPI**.
+- Obtiene 5 perros aleatorios desde **Dog CEO API**.
+- Muestra cada animal en una tarjeta (`AnimalCard`) con imagen, nombre y botón de adoptar.
+- Al pulsar "Adoptar", se abre un modal con el mensaje de adopción.
+- Muestra un spinner de carga mientras se resuelven las peticiones a las APIs.
+- Diseño responsive con Bootstrap.
 
-## Expanding the ESLint configuration
+## Tecnologías
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Axios](https://axios-http.com/)
+- [Bootstrap 5](https://getbootstrap.com/)
+- [TheCatAPI](https://thecatapi.com/) y [Dog CEO API](https://dog.ceo/dog-api/)
+
+## Empezar en local
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/TU_USUARIO/TU_REPO.git
+   cd TU_REPO
+   ```
+
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+
+3. Ejecuta el proyecto en modo desarrollo:
+   ```bash
+   npm run dev
+   ```
+
+4. Abre [http://localhost:5173](http://localhost:5173) en tu navegador.
+
+## Notas
+
+- `getCats(n)` realiza dos peticiones encadenadas: una para obtener imágenes básicas y otra en paralelo (`Promise.all`) para obtener el nombre de la raza de cada gato. Si un gato no tiene raza definida, se muestra el nombre genérico `"Gato"`.
+- `getDogs(n)` extrae el nombre de la raza a partir de la URL de la imagen devuelta por la API.
+
+## Autor
+
+Desire-e — [GitHub](https://github.com/TU_USUARIO)
+
+## Licencia
+
+Este proyecto es de uso personal/educativo.
