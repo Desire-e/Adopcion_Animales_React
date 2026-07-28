@@ -4,7 +4,7 @@ Aplicación React que consume datos de dos APIs públicas (**TheCatAPI** y **Dog
 
 ## Demo
 
-🔗 [Ver proyecto desplegado](https://desire-e.github.io/Adopcion_Animales_React/)
+[Ver proyecto desplegado](https://desire-e.github.io/Adopcion_Animales_React/)
 
 ## Características
 
