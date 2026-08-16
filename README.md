@@ -27,8 +27,8 @@ Aplicación React que consume datos de dos APIs públicas (**TheCatAPI** y **Dog
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/TU_USUARIO/TU_REPO.git
-   cd TU_REPO
+   git clone https://github.com/Desire-e/Adopcion_Animales_React
+   cd Adopcion_Animales_React
    ```
 
 2. Instala las dependencias:
@@ -50,7 +50,7 @@ Aplicación React que consume datos de dos APIs públicas (**TheCatAPI** y **Dog
 
 ## Autor
 
-Desire-e — [GitHub](https://github.com/TU_USUARIO)
+Desire-e — [GitHub](https://github.com/Desire-e)
 
 ## Licencia
 
